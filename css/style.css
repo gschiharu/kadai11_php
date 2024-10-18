@@ -1,0 +1,394 @@
+/* 共通スタイル */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 15px 0; /* ヘッダーのパディングを増やして、ボタンが目立つように */
+  text-align: center;
+}
+
+.navbar-brand {
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px; /* ブランド名のフォントサイズを大きく */
+  padding: 0 20px;
+}
+
+/* ヘッダーボタンの共通スタイル */
+.header-button {
+  display: inline-block; 
+  margin: 0 10px; /* ボタンの間隔を調整 */
+  padding: 12px 20px; /* ボタンのパディング */
+  font-size: 16px; /* フォントサイズ */
+  color: #fff; /* ボタンの文字色 */
+  background-color: #05b79f; /* ボタンの背景色 */
+  border: none; /* ボーダーを無しに */
+  border-radius: 5px; /* 角を丸く */
+  text-decoration: none; /* 下線を無しに */
+  transition: background-color 0.3s, transform 0.2s; /* 背景色の変化をスムーズに */
+}
+
+/* ボタンホバー時のスタイル */
+.header-button:hover {
+  background-color: #2c98a0; /* ホバー時の背景色 */
+  transform: scale(1.05); /* ホバー時に少し拡大 */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+/* メインフォームスタイル */
+.registration-form {
+  background-color: #fff;
+  padding: 20px;
+  margin: 30px auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  border-radius: 10px;
+}
+
+.registration-form h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #05b79f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #2c98a0;
+}
+
+/* メンバーリストのスタイル */
+.member-list {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.member-list h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.profiles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.profile-card {
+  width: 300px;
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.profile-card h2 {
+  margin-top: 0;
+  font-size: 1.4em;
+  color: #333;
+}
+
+.profile-card p {
+  margin: 10px 0;
+}
+
+.profile-card p strong {
+  display: inline-block;
+  width: 100px;
+  font-weight: bold;
+}
+
+/* ログインフォームのスタイル */
+.login-form {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.login-form h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.5em;
+}
+
+/* ログアウトボタン */
+.logout-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.btn-logout {
+  text-decoration: none;
+  color: white;
+  background-color: red;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.btn-logout:hover {
+  background-color: darkred;
+}
+
+
+/* ユーザー管理ボタンのスタイルをログアウトボタンに統一 */
+.btn-user-management {
+  text-decoration: none;
+  color: white;
+  background-color: red; /* btn-logoutと同じ背景色 */
+  padding: 10px 15px; /* btn-logoutと同じパディング */
+  border-radius: 5px; /* btn-logoutと同じボーダーの角丸 */
+  font-size: 16px; /* btn-logoutと同じフォントサイズ */
+  font-weight: bold; /* btn-logoutと同じフォントの太さ */
+  transition: background-color 0.3s; /* btn-logoutと同じホバー効果 */
+}
+
+.btn-user-management:hover {
+  background-color: darkred; /* ホバー時の背景色をログアウトボタンと同じに */
+}
+
+/* 戻るボタン */
+.btn-back {
+  display: inline-block; 
+  margin-right: 20px; 
+  padding: 10px 15px; 
+  background-color: #4ecdc4; 
+  color: white; 
+  border: none; 
+  border-radius: 5px; 
+  text-decoration: none; 
+  font-size: 16px; 
+  transition: background-color 0.3s; 
+}
+
+.btn-back:hover {
+  background-color: #36b8aa; 
+}
+
+/* レスポンシブスタイル */
+@media (max-width: 768px) {
+  .header-button,
+  .btn-user-management,
+  .btn-back,
+  .btn-logout,
+  .menu-button {
+      width: 100%; /* ボタンを全幅に */
+      margin: 10px 0; /* マージンを調整 */
+      padding: 15px; /* パディングを調整 */
+      font-size: 18px; /* フォントサイズを大きく */
+  }
+
+  .profile-card {
+      width: 100%; /* プロフィールカードを全幅に */
+      margin: 10px 0; /* マージンを調整 */
+  }
+
+  .registration-form,
+  .login-form {
+      padding: 20px; /* フォームのパディングを調整 */
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-brand {
+      font-size: 20px; /* ブランド名のフォントサイズを小さく */
+  }
+
+  button,
+  .header-button {
+      font-size: 16px; /* フォントサイズを調整 */
+  }
+}
+
+/* ヘッダーボタンのスタイル */
+.header-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.header-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+.register-btn {
+  background-color: #4CAF50; /* 緑色 */
+}
+
+.register-btn:hover {
+  background-color: #45a049;
+}
+
+.apply-btn {
+  background-color: #FF9800; /* オレンジ色 */
+}
+
+.apply-btn:hover {
+  background-color: #fb8c00;
+}
+/* thanks-card のスタイル */
+.thanks-card {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.thanks-card h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.thanks-card p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+/* ヘッダー部分のスタイル調整 */
+.nav-header {
+  display: flex;
+  justify-content: flex-end; /* 右寄せ配置 */
+  padding: 10px 20px;
+}
+
+/* ログアウトボタンのスタイル */
+.btn-logout {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 8px 12px; /* 小さめのパディング */
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.btn-logout:hover {
+  background-color: #d32f2f;
+}
+
+/* カード部分のスタイル */
+.thanks-card {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* 画像を大きく表示するためのスタイル */
+.hero-image {
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* メッセージ部分のスタイル */
+.message-section {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.message-section h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.sub-message {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.8;
+}
+
+/* Calendly の埋め込み部分 */
+.calendly-section {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+}
+
+/* Calendly ウィジェットのカスタム幅調整 */
+.calendly-inline-widget {
+  width: 100%; /* 親要素の幅に合わせる */
+  max-width: 800px;
+  height: 750px;
+}
+
+
